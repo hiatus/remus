@@ -1,0 +1,22 @@
+[package]
+name = "remus"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+byteorder = "1.5"
+colored = "2.1"
+crc32fast = "1.4"
+hex = "0.4"
+libaes = "0.7"
+num_cpus = "1.16"
+rayon = "1.10"
+rand = "0.8"
+regex = "1.11"
+structopt = "0.3"
+walkdir = "2.5"
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
