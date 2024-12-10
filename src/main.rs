@@ -18,7 +18,8 @@ struct RemusOptions {
     decrypt: bool,
 
     #[structopt(
-        short = "k", long = "key-hex", value_name = "hex", help = "Specify AES key bytes in hexadecimal"
+        short = "k", long = "key-hex", value_name = "hex",
+        help = "Specify AES key bytes in hexadecimal (16 bytes)"
     )]
     key_hex: Option<String>,
 
